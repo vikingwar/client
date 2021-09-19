@@ -11,6 +11,7 @@ const Wrapper = styled.header`
   background: #1e1e1e;
   border-bottom: 1px solid #414141;
   display: flex;
+  z-index: 2;
 `;
 
 const Content = styled.div`
@@ -72,7 +73,5 @@ function Header() {
     </Wrapper>
   );
 }
-
-Header.propTypes = {};
 
 export default Header;

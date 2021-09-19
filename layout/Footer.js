@@ -7,7 +7,6 @@ import breakpoints from "../configs/breakpoints";
 const Wrapper = styled.div`
   width: 100%;
   border-top: 1px solid #3e4044;
-  width: 100%;
   background-color: #1e1e1e;
 `;
 
@@ -78,7 +77,5 @@ function Footer() {
     </Wrapper>
   );
 }
-
-Footer.propTypes = {};
 
 export default Footer;

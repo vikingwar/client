@@ -24,6 +24,7 @@ const Container = styled.div`
   }
   @media ${breakpoints.tablet} {
     background-image: url(/images/background-tablet.jpeg), linear-gradient(to bottom, #0b181d, #0b181d);
+    background-size: contain;
   }
 `;
 
@@ -37,7 +38,5 @@ function DefaultLayout({ children }) {
     </Container>
   );
 }
-
-DefaultLayout.propTypes = {};
 
 export default DefaultLayout;
