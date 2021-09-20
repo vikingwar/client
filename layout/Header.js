@@ -11,7 +11,7 @@ const Wrapper = styled.header`
   background: #1e1e1e;
   border-bottom: 1px solid #414141;
   display: flex;
-  z-index: 2;
+  z-index: 99;
 `;
 
 const Content = styled.div`
