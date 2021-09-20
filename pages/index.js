@@ -1,10 +1,10 @@
 // import type { NextPage } from "next";
-import { useEffect } from "react";
-import { END } from "redux-saga";
+// import { useEffect } from "react";
+// import { END } from "redux-saga";
 
-import { GET_ALL_TODO } from "../redux/actions/todo";
-import { wrapper } from "../redux/store";
-import { useAppSelector } from "../utils/Hook";
+// import { GET_ALL_TODO } from "../redux/actions/todo";
+// import { wrapper } from "../redux/store";
+// import { useAppSelector } from "../utils/Hook";
 
 import Shortcut from "../components/Home/Shortcut";
 import BoxWelcome from "../components/Home/BoxWelcome";
