@@ -6,11 +6,29 @@ class MyDocument extends Document {
   //   return { ...initialProps };
   // }
 
-  static getInitialProps({ renderPage }) {
+  static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
-    const page = renderPage((App) => (props) => sheet.collectStyles(<App {...props} />));
-    const styleTags = sheet.getStyleElement();
-    return { ...page, styleTags };
+    const originalRenderPage = ctx.renderPage;
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />)
+        });
+
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        )
+      };
+    } finally {
+      sheet.seal();
+    }
   }
 
   render() {
@@ -20,10 +38,18 @@ class MyDocument extends Document {
           <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
           <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
           <title>Vikings: War of Clan Events and Competitions Guide - Official site</title>
+          <meta name="description" content="Viking War is an online #game to conquer ancient #lands. #Play2Earn - #NFT #game on #blockchain - #BSC" />
+
+          <meta property="og:site_name" content="Vikings War" />
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content="Vikings: War of Clan Events and Competitions Guide - Official site" />
+          <meta property="og:url" content="https://vikingwar.io" />
           <meta
-            name="description"
-            content="Special events and competitions are held regularly in Vikings: War of Clans. This guide will detail the different types and the rewards you can win."
+            property="og:description"
+            content="Viking War is an online #game to conquer ancient #lands. #Play2Earn - #NFT #game on #blockchain - #BSC"
           />
+          <meta property="og:image" content="/images/banner.png" />
+
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet" />
