@@ -40,7 +40,8 @@ const Content = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 60px;
+  font-family: Teko;
+  font-size: 78px;
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 1px 0 rgb(0 0 0 / 50%), 0 10px 30px rgb(0 0 0 / 20%);
@@ -77,9 +78,11 @@ const ButtonPlay = styled.button`
 
   text-transform: uppercase;
   text-shadow: 1px 1px 1px rgb(0 17 24 / 31%);
-  font-weight: 500;
   color: #fff;
-  font-size: 35px;
+  font-family: Teko;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
   cursor: pointer;
   &:hover {
     text-decoration: none;

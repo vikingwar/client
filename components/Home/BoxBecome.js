@@ -40,26 +40,33 @@ const Text = styled.div`
   color: #ccc;
   width: 50%;
   > h2 {
-    font-family: MuseoSans;
-    font-size: 28px;
+    font-family: Teko;
+    font-size: 32px;
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 11px;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 0;
   }
   > p {
-    font-family: MuseoSans;
-    font-size: 16px;
+    font-family: Teko;
+    font-size: 22px;
     word-wrap: break-word;
     font-weight: 300;
     line-height: 24px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
   @media ${breakpoints.tablet} {
     width: auto;
     margin: 0 14px;
     z-index: 2;
+    > h2 {
+      font-size: 24px;
+    }
+    > p {
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
 `;
 

@@ -24,6 +24,9 @@ class MyDocument extends Document {
             name="description"
             content="Special events and competitions are held regularly in Vikings: War of Clans. This guide will detail the different types and the rewards you can win."
           />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet" />
         </Head>
         <body className="rs">
           <Main />

@@ -65,11 +65,13 @@ const Text = styled.span`
     text-transform: uppercase;
     font-weight: 400;
     text-shadow: 0 2px 10px #000;
-    font-family: MuseoSans;
+    font-family: Teko;
   }
   > p {
-    font-family: MuseoSans;
-    font-size: 18px;
+    font-family: Teko;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 2px;
     font-weight: 300;
     display: block;
     margin-bottom: 0.5rem;
@@ -81,11 +83,11 @@ const Text = styled.span`
   @media ${breakpoints.tablet} {
     background-color: #000;
     > h2 {
-      font-size: 22px;
+      font-size: 24px;
     }
     > p {
       opacity: 1;
-      font-size: 16px;
+      font-size: 18px;
       max-height: unset;
     }
     &:before {

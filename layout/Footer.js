@@ -38,7 +38,7 @@ const Menu = styled.div`
   }
 `;
 const MenuItem = styled.a`
-  margin-right: 135px;
+  margin-right: 50px;
   text-decoration: none;
   font-family: MuseoSans;
   font-size: 18px;

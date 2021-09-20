@@ -1,10 +1,10 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 
 function useDeviceType() {
   const [deviceType, setDeviceType] = useState("desktop");
   const [deviceWidth, setDeviceWidth] = useState("desktop");
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     function updateSize() {
       let type = "desktop";
       if (window.innerWidth >= 1440) {
