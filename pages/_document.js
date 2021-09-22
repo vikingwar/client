@@ -37,12 +37,12 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
           <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-          <title>Vikings: War of Clan Events and Competitions Guide - Official site</title>
+          <title>Vikings War - Play & Earn</title>
           <meta name="description" content="Viking War is an online #game to conquer ancient #lands. #Play2Earn - #NFT #game on #blockchain - #BSC" />
 
           <meta property="og:site_name" content="Vikings War" />
           <meta property="og:type" content="article" />
-          <meta property="og:title" content="Vikings: War of Clan Events and Competitions Guide - Official site" />
+          <meta property="og:title" content="Vikings War - Play & Earn" />
           <meta property="og:url" content="https://vikingwar.io" />
           <meta
             property="og:description"

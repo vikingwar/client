@@ -73,7 +73,7 @@ const ButtonPlay = styled.button`
   transition: opacity 0.3s, background 0.3s;
   text-shadow: 1px 1px 1px rgb(0 17 24 / 31%);
   box-shadow: 0 6px 30px rgb(0 0 0 / 40%);
-  background-color: #00fa00;
+  background-color: gray;
   background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.55));
 
   text-transform: uppercase;
@@ -101,19 +101,18 @@ function CTA() {
     <Wrapper>
       <Content>
         <Title>
-          Vikings:
-          <div>War of Clans</div>
+          Vikings war
+          <div>Play & earn</div>
         </Title>
-        {deviceWidth < 768 ? (
-          <ButtonDownloadAppStore>
-            <img
-              src={deviceOs === "ios" ? "/images/download-app-store.svg" : "/images/download-google-store.svg"}
-              alt="download"
-              width={152}
-              height={45}
-            />
-          </ButtonDownloadAppStore>
-        ) : (
+        {deviceWidth < 768 ? // <ButtonDownloadAppStore>
+        //   <img
+        //     src={deviceOs === "ios" ? "/images/download-app-store.svg" : "/images/download-google-store.svg"}
+        //     alt="download"
+        //     width={152}
+        //     height={45}
+        //   />
+        // </ButtonDownloadAppStore>
+        null : (
           <ButtonPlay>Play for Free</ButtonPlay>
         )}
       </Content>

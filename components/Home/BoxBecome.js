@@ -37,7 +37,7 @@ const Text = styled.div`
   background-color: rgba(24, 40, 55, 0.95);
   padding: 44px;
   color: #ccc;
-  width: 50%;
+  width: 40%;
   > h2 {
     font-family: Teko;
     font-size: 32px;

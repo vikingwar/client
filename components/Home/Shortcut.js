@@ -46,12 +46,17 @@ function Shortcut() {
           title="News"
           description="Amazing Offers Are Now Available! Check out the News section for more Game updates!"
           isHighlight
-        />
+        >
+          <video autoPlay muted loop style={{ position: "absolute", width: "100%", objectFit: "fill", height: "100%" }}>
+            <source src="/images/trailer-viking.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </ShortcutItem>
       </LeftSide>
       <RightSide>
         <ShortcutItem
           image="/images/shortcut-game-guides.png"
-          title="GAME GUIDES"
+          title="GAME"
           description="Here are a few guides to help you get started playing Vikings: War of Clans!"
           style={{ marginBottom: "24px" }}
         />

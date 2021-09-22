@@ -9,6 +9,7 @@ const Wrapper = styled.a`
   border-top: 1px solid #3e4044;
   background-color: #1e1e1e;
   height: ${(props) => (props.isHighlight ? "456px" : "216px")};
+  background-size: cover;
   background-repeat: no-repeat;
   text-decoration: none;
   display: block;
@@ -96,9 +97,10 @@ const Text = styled.span`
   }
 `;
 
-function ShortcutItem({ image, title, description, isHighlight, style = {} }) {
+function ShortcutItem({ image, title, description, isHighlight, style = {}, children }) {
   return (
     <Wrapper isHighlight={isHighlight} style={{ backgroundImage: `url("${image}")`, ...style }}>
+      {children}
       <Text>
         <h2>{title}</h2>
         <p>{description}</p>

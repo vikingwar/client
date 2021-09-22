@@ -20,6 +20,8 @@ const Content = styled.div`
   width: 1368px;
   padding: 0 14px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   @media ${breakpoints.laptop} {
     width: 960px;
   }
@@ -34,6 +36,10 @@ const Logo = styled.a`
 
 const Menu = styled.a`
   display: flex;
+  height: 100%;
+  @media ${breakpoints.tablet} {
+    display: none;
+  }
 `;
 
 const MenuItem = styled.a`
@@ -56,19 +62,41 @@ const MenuItem = styled.a`
   }
 `;
 
+const Box = styled.a`
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+`;
+
+const ButtonConnectWallet = styled.button`
+  height: 32px;
+  border-radius: 5px;
+  border: unset;
+  font-family: MuseoSans;
+  font-weight: 400;
+  padding: 0 15px;
+  cursor: pointer;
+`;
+
 function Header() {
   return (
     <Wrapper>
       <Content>
-        <Logo>
-          <Image src="/images/logo.png" alt="Logo" width={43} height={43} />
-        </Logo>
-        <Menu>
-          <MenuItem>Game Info</MenuItem>
-          <MenuItem>Game Guides</MenuItem>
-          <MenuItem>News</MenuItem>
-          <MenuItem>Faq</MenuItem>
-        </Menu>
+        <Box>
+          <Logo>
+            <Image src="/images/logo.png" alt="Logo" width={43} height={43} />
+          </Logo>
+          <Menu>
+            <MenuItem>Game Info</MenuItem>
+            <MenuItem>Open NFT</MenuItem>
+            <MenuItem>News</MenuItem>
+            <MenuItem>Faq</MenuItem>
+          </Menu>
+        </Box>
+        <Box>
+          <ButtonConnectWallet onClick={() => alert("Coming soon")}>Connect</ButtonConnectWallet>
+        </Box>
       </Content>
     </Wrapper>
   );

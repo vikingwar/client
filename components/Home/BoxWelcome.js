@@ -36,7 +36,7 @@ const Text = styled.div`
   background-color: rgba(24, 40, 55, 0.95);
   padding: 44px;
   color: #ccc;
-  width: 50%;
+  width: 45%;
   > h2 {
     font-family: Teko;
     font-size: 32px;
@@ -91,13 +91,19 @@ function BoxWelcome() {
     <Wrapper>
       <Content>
         <Text>
-          <h2>Welcome to Vikings: War of Clans!</h2>
+          <h2>Welcome to Vikings: Play & earn!</h2>
           <p>
-            Let your beard grow wild, sharpen your axe and get that horned helmet out of storage - it is time to lead a Viking invasion! Wield the
-            power of a ruthless Viking army, raid lands and Towns for resources, and become the most formidable and feared Jarl in all the North! Play
-            Vikings: War of Clans today! After its unprecedented success on mobile devices, Vikings: War of Clans is now available on Internet
-            browsers worldwide! Vikings: War of Clans is a phenomenal Massively Multiplayer Real Time Strategy game that takes the player to the grim
-            Northern lands, where Viking warlords fight over every piece of precious territory.
+            During this era, groups of Vikings went to trade, pillaging much of Europe, southwestern Asia, and exploring the North Atlantic and
+            northeastern America. In addition to trading and looting, they also mercenary, slave-collecting and also contributed to the development of
+            feudalism in Europe.
+          </p>
+          <p>
+            Viking society in this era did not form a nation, but only small units in the form of independent villages. Medieval Nordic
+            nation-building. Players participate in the game fighting monsters to train levels, complete missions to conquer the land, destroy
+            monsters, etc. There are quests that require the player to have enough materials to build ships and maps to conquer, or to have enough
+            weapons to destroy monsters. During their conquest, the player can play in groups to assist. support each other and can attack other
+            groups to compete for the right to conquer (there are bosses that only appear once a day) When winning a Boss, the player will randomly
+            receive dropped items, which the player can use or sell on the NFT Market.
           </p>
         </Text>
         <Hero />
