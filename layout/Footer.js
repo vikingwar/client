@@ -11,6 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
+  height: 61px;
   margin-left: auto;
   margin-right: auto;
   width: 1368px;
@@ -32,17 +33,12 @@ const Content = styled.div`
 
 const Menu = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  margin: 20px 0;
   @media ${breakpoints.tablet} {
     flex-direction: column;
-    margin: 0;
   }
 `;
 const MenuItem = styled.a`
-  width: 50%;
-  height: 46px;
-  line-height: 46px;
+  margin-right: 50px;
   text-decoration: none;
   font-family: MuseoSans;
   font-size: 18px;
@@ -52,7 +48,6 @@ const MenuItem = styled.a`
     text-decoration: underline;
   }
   @media ${breakpoints.tablet} {
-    width: 100%;
     height: 36px;
     display: flex;
     align-items: center;
@@ -60,7 +55,7 @@ const MenuItem = styled.a`
 `;
 const Copyright = styled.div`
   color: #8a8a8a;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   font-family: MuseoSans;
   font-weight: 300;
@@ -72,21 +67,17 @@ function Footer() {
     <Wrapper>
       <Content>
         <Menu>
-          <MenuItem href="https://t.me/vikingwar_io" target="_blank">
-            Support
-          </MenuItem>
+          <MenuItem>Privacy Policy</MenuItem>
+          <MenuItem>Terms of Use</MenuItem>
           <MenuItem href="https://t.me/vikingwar_io" target="_blank">
             Telegram Group
           </MenuItem>
-          <MenuItem>Company</MenuItem>
           <MenuItem href="https://t.me/vikingwarnews" target="_blank">
             Telegram Channel
           </MenuItem>
-          <MenuItem>Privacy Policy</MenuItem>
           <MenuItem href="https://twitter.com/VikingWar_io" target="_blank">
             Twitter
           </MenuItem>
-          <MenuItem>Terms of Use</MenuItem>
         </Menu>
         <Copyright>©2021 Viking War</Copyright>
       </Content>

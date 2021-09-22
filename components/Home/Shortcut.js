@@ -50,10 +50,15 @@ function Shortcut() {
           description="Amazing Offers Are Now Available! Check out the News section for more Game updates!"
           isHighlight
         >
-          <video autoPlay muted loop style={{ position: "absolute", width: "100%", objectFit: "fill", height: "100%" }}>
-            <source src="/images/trailer-viking.mp4" type="video/mp4" />
-            Your browser does not support HTML5 video.
-          </video>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube-nocookie.com/embed/xshfF40odoo?autoplay=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </ShortcutItem>
       </LeftSide>
       <RightSide>
