@@ -42,7 +42,7 @@ function Shortcut() {
     <Wrapper>
       <LeftSide>
         <ShortcutItem
-          image="/images/shortcut-news.jpeg"
+          image="/images/shortcut-news.png"
           title="News"
           description="Amazing Offers Are Now Available! Check out the News section for more Game updates!"
           isHighlight
@@ -50,13 +50,13 @@ function Shortcut() {
       </LeftSide>
       <RightSide>
         <ShortcutItem
-          image="/images/shortcut-game-guides.jpeg"
+          image="/images/shortcut-game-guides.png"
           title="GAME GUIDES"
           description="Here are a few guides to help you get started playing Vikings: War of Clans!"
           style={{ marginBottom: "24px" }}
         />
         <ShortcutItem
-          image="/images/shortcut-faq.jpeg"
+          image="/images/shortcut-faq.png"
           title="FAQ"
           description="Got questions about Vikings? Click here to get all the answers you need to start playing this strategy game!"
           // style={{ height: "216px" }}

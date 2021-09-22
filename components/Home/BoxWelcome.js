@@ -5,7 +5,7 @@ import styled from "styled-components";
 import breakpoints from "../../configs/breakpoints";
 
 const Wrapper = styled.div`
-  background-image: url(/images/background-hero.jpeg);
+  background-image: url(/images/background-flat.png);
   display: flex;
   align-items: center;
   position: relative;
