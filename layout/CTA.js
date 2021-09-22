@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import breakpoints from "../configs/breakpoints";
 
-import useDeviceOs from "../hooks/useDeviceOs";
+// import useDeviceOs from "../hooks/useDeviceOs";
 import useDeviceType from "../hooks/useDeviceType";
 
 const Wrapper = styled.div`
@@ -91,13 +91,13 @@ const ButtonPlay = styled.button`
   }
 `;
 
-const ButtonDownloadAppStore = styled.a`
-  cursor: pointer;
-`;
+// const ButtonDownloadAppStore = styled.a`
+//   cursor: pointer;
+// `;
 
 function CTA() {
   const [, deviceWidth] = useDeviceType();
-  const deviceOs = useDeviceOs();
+  // const deviceOs = useDeviceOs();
   return (
     <Wrapper>
       <Content>
@@ -105,13 +105,7 @@ function CTA() {
           Vikings war
           <div>Play & earn</div>
         </Title>
-        {deviceWidth < 768 ? //     src={deviceOs === "ios" ? "/images/download-app-store.svg" : "/images/download-google-store.svg"} //   <img // <ButtonDownloadAppStore>
-        //     alt="download"
-        //     width={152}
-        //     height={45}
-        //   />
-        // </ButtonDownloadAppStore>
-        null : (
+        {deviceWidth > 768 && (
           <Link href="/game">
             <ButtonPlay>Play for Free</ButtonPlay>
           </Link>
