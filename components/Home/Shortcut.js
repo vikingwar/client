@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useRouter } from "next/router";
 
 import breakpoints from "../../configs/breakpoints";
 
@@ -38,12 +39,14 @@ const RightSide = styled.div`
 `;
 
 function Shortcut() {
+  const router = useRouter();
   return (
     <Wrapper>
       <LeftSide>
         <ShortcutItem
+          onClick={() => window.open("https://twitter.com/VikingWar_io", "_blank")}
           image="/images/shortcut-news.png"
-          title="News"
+          title="TWITTER"
           description="Amazing Offers Are Now Available! Check out the News section for more Game updates!"
           isHighlight
         >
@@ -55,12 +58,14 @@ function Shortcut() {
       </LeftSide>
       <RightSide>
         <ShortcutItem
+          onClick={() => router.push("/game")}
           image="/images/shortcut-game-guides.png"
           title="GAME"
-          description="Here are a few guides to help you get started playing Vikings: War of Clans!"
+          description="Viking War is an online game to conquer ancient lands - Play2Earn - NFT, game on blockchain - BSC"
           style={{ marginBottom: "24px" }}
         />
         <ShortcutItem
+          onClick={() => window.open("https://t.me/vikingwar_io", "_blank")}
           image="/images/shortcut-faq.png"
           title="FAQ"
           description="Got questions about Vikings? Click here to get all the answers you need to start playing this strategy game!"

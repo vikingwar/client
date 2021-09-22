@@ -72,7 +72,9 @@ function Footer() {
     <Wrapper>
       <Content>
         <Menu>
-          <MenuItem>Support</MenuItem>
+          <MenuItem href="https://t.me/vikingwar_io" target="_blank">
+            Support
+          </MenuItem>
           <MenuItem href="https://t.me/vikingwar_io" target="_blank">
             Telegram Group
           </MenuItem>

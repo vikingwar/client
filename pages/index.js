@@ -11,17 +11,19 @@ import BoxWelcome from "../components/Home/BoxWelcome";
 import BoxStart from "../components/Home/BoxStart";
 import BoxBecome from "../components/Home/BoxBecome";
 
+import Layout from "../layout";
+
 const Home = () => {
   // const { list } = useAppSelector((state) => state.todoReducer);
 
   return (
-    <>
+    <Layout>
       <Shortcut />
       <BoxWelcome />
       <BoxStart />
       <BoxBecome />
       {/* <ul>{list.length > 0 && list.map((value) => <li key={value?.id}>{value?.title} </li>)}</ul> */}
-    </>
+    </Layout>
   );
 };
 

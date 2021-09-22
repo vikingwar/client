@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import styled from "styled-components";
 
@@ -104,16 +105,16 @@ function CTA() {
           Vikings war
           <div>Play & earn</div>
         </Title>
-        {deviceWidth < 768 ? // <ButtonDownloadAppStore>
-        //   <img
-        //     src={deviceOs === "ios" ? "/images/download-app-store.svg" : "/images/download-google-store.svg"}
+        {deviceWidth < 768 ? //     src={deviceOs === "ios" ? "/images/download-app-store.svg" : "/images/download-google-store.svg"} //   <img // <ButtonDownloadAppStore>
         //     alt="download"
         //     width={152}
         //     height={45}
         //   />
         // </ButtonDownloadAppStore>
         null : (
-          <ButtonPlay>Play for Free</ButtonPlay>
+          <Link href="/game">
+            <ButtonPlay>Play for Free</ButtonPlay>
+          </Link>
         )}
       </Content>
     </Wrapper>
