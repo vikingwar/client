@@ -75,10 +75,16 @@ function BoxStart() {
         <Text>
           <h2>START YOUR STRATEGY</h2>
           <p>
-            Vikings: War of Clans™ is a real-time strategy title which means you can only rely on your strategy skills while trying to get to the top.
-            Yes, you can count on brute force and sheer numbers and throw everything you have at your enemy’s gate in the hopes of bringing them down
-            but other Jarls will quickly learn to anticipate your mindless attacks and repel them with ease. If you want to make your enemies fear
-            your every move, you will need to devise your own unique battle strategies.
+            Each character has 4 main skills, every 10 levels will change the form and open one more skill, after opening all 4 skills, the character
+            will still increase the level but not change the form anymore.
+          </p>
+          <p>
+            Through the corresponding monster farm maps, each character level can train their level, if fighting monsters on the map is not suitable,
+            the EXP will be lower.
+          </p>
+          <p>
+            To start playing the game, players will need to purchase 1 NFT representing their desired character, either on the system or in the NFT
+            markets. If purchased from the system, players can only buy basic characters (level 1, form 1, skill 1)
           </p>
         </Text>
       </Content>

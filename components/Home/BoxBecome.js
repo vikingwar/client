@@ -74,14 +74,13 @@ function BoxBecome() {
     <Wrapper>
       <Content>
         <Text>
-          <h2>BECOME A WARRIOR</h2>
+          <h2>Character upgrade</h2>
           <p>
-            As the Jarl of your Town, you must be loyal to your warriors and the lands under your influence. It’s your duty to develop and master your
-            own different strategies for times of war, rely on diplomatic solutions in times of peace, and do whatever it takes to ensure the
-            prosperity of your army and Town. Do you have what it takes to crush your enemies, drive them from your lands and achieve true greatness?
-            Only those who tasted victory know that nothing else tastes as sweet. Engage in fierce PvE and PvP battle and gain rewards beyond your
-            wildest dreams. Raid Towns, or destroy roaming gangs of Invaders to collect precious resource and raise your stature among the Northern
-            Clans. Master different battle strategies, and you’ll soon be the most feared Jarl in all the North.
+            In addition, the system still allows players to upgrade their desired form and character by collecting a sufficient number of NFTs of
+            lower level characters, the upgraded characters are limited in number, if not, the system Upgrades will not be available. Specifically,
+            there are 4 character levels: Beginner ={">"} intermediate ={">"} advanced ={">"} god, respectively with the number of releases: Unlimited
+            ={">"} 1000 000 ={">"} 10 000 ={">"} 100 To upgrade, each level requires 100 lower level NFT, low level NFT will be burned and create
+            higher level character NFT.
           </p>
         </Text>
       </Content>
