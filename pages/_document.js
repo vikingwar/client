@@ -48,7 +48,8 @@ class MyDocument extends Document {
             property="og:description"
             content="Viking War is an online #game to conquer ancient #lands. #Play2Earn - #NFT #game on #blockchain - #BSC"
           />
-          <meta property="og:image" content="/images/banner.png" />
+          <meta property="og:image" content="images/banner.png" />
+          {/* <meta property="og:image" content="/assets/img/logotype.png"> */}
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
