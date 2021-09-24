@@ -35,8 +35,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-          <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+          <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+          <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
           <title>Vikings War - Play & Earn</title>
           <meta name="description" content="Viking War is an online #game to conquer ancient #lands. #Play2Earn - #NFT #game on #blockchain - #BSC" />
 
@@ -48,8 +48,8 @@ class MyDocument extends Document {
             property="og:description"
             content="Viking War is an online #game to conquer ancient #lands. #Play2Earn - #NFT #game on #blockchain - #BSC"
           />
-          <meta property="og:image" content="images/banner.png" />
-          {/* <meta property="og:image" content="/assets/img/logotype.png"> */}
+          <meta property="og:image" content="/images/banner.png" />
+          <meta property="og:image:type" content="image/png" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
