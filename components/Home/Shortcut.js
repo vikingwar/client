@@ -49,6 +49,7 @@ function Shortcut() {
           title="TWITTER"
           description="Amazing Offers Are Now Available! Check out the News section for more Game updates!"
           isHighlight
+          hiddenText
         >
           <iframe
             width="100%"

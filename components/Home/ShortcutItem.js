@@ -97,14 +97,16 @@ const Text = styled.span`
   }
 `;
 
-function ShortcutItem({ onClick, image, title, description, isHighlight, style = {}, children }) {
+function ShortcutItem({ onClick, image, title, description, isHighlight, hiddenText, style = {}, children }) {
   return (
     <Wrapper isHighlight={isHighlight} style={{ backgroundImage: `url("${image}")`, ...style }} onClick={onClick}>
       {children}
-      <Text>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </Text>
+      {!hiddenText && (
+        <Text>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </Text>
+      )}
     </Wrapper>
   );
 }
@@ -114,6 +116,7 @@ ShortcutItem.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   isHighlight: PropTypes.bool,
+  hiddenText: PropTypes.bool,
   style: PropTypes.any,
   onClick: PropTypes.func
 };
