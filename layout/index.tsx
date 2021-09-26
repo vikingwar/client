@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
 
 import breakpoints from "../configs/breakpoints";
@@ -29,7 +29,11 @@ const Container = styled.div`
   }
 `;
 
-function DefaultLayout({ children }) {
+interface LaypoutProps {
+  children: ReactNode;
+}
+
+function DefaultLayout({ children }: LaypoutProps) {
   return (
     <Container>
       <Header />

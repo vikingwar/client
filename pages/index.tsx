@@ -1,3 +1,4 @@
+import type { NextPage } from "next";
 // import type { NextPage } from "next";
 // import { useEffect } from "react";
 // import { END } from "redux-saga";
@@ -13,7 +14,7 @@ import BoxBecome from "../components/Home/BoxBecome";
 
 import Layout from "../layout";
 
-const Home = () => {
+const Home: NextPage = () => {
   // const { list } = useAppSelector((state) => state.todoReducer);
 
   return (

@@ -1,14 +1,17 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import breakpoints from "../../configs/breakpoints";
+
+interface WrapperProps {
+  isHighlight: boolean;
+}
 
 const Wrapper = styled.a`
   width: 100%;
   border-top: 1px solid #3e4044;
   background-color: #1e1e1e;
-  height: ${(props) => (props.isHighlight ? "456px" : "216px")};
+  height: ${(props: WrapperProps) => (props.isHighlight ? "456px" : "216px")};
   background-size: cover;
   background-repeat: no-repeat;
   text-decoration: none;
@@ -97,7 +100,18 @@ const Text = styled.span`
   }
 `;
 
-function ShortcutItem({ onClick, image, title, description, isHighlight, hiddenText, style = {}, children }) {
+interface Props {
+  onClick: any;
+  image: string;
+  title: string;
+  description: string;
+  isHighlight: boolean;
+  hiddenText?: boolean;
+  style?: any;
+  children?: any;
+}
+
+const ShortcutItem: React.FC<Props> = ({ onClick, image, title, description, isHighlight, hiddenText, style = {}, children }) => {
   return (
     <Wrapper isHighlight={isHighlight} style={{ backgroundImage: `url("${image}")`, ...style }} onClick={onClick}>
       {children}
@@ -109,16 +123,11 @@ function ShortcutItem({ onClick, image, title, description, isHighlight, hiddenT
       )}
     </Wrapper>
   );
-}
+};
 
-ShortcutItem.propTypes = {
-  image: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  isHighlight: PropTypes.bool,
-  hiddenText: PropTypes.bool,
-  style: PropTypes.any,
-  onClick: PropTypes.func
+ShortcutItem.defaultProps = {
+  isHighlight: false,
+  hiddenText: false
 };
 
 export default ShortcutItem;

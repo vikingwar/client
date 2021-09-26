@@ -69,12 +69,14 @@ function Shortcut() {
           title="GAME"
           description="Viking War is an online game to conquer ancient lands - Play2Earn - NFT, game on blockchain - BSC"
           style={{ marginBottom: "24px" }}
+          isHighlight={false}
         />
         <ShortcutItem
           onClick={() => window.open("https://t.me/vikingwar_io", "_blank")}
           image="/images/shortcut-faq.png"
           title="FAQ"
           description="Got questions about Vikings? Click here to get all the answers you need to start playing this strategy game!"
+          isHighlight={false}
           // style={{ height: "216px" }}
         />
       </RightSide>

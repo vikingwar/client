@@ -4,16 +4,15 @@ import { GET_ALL_TODO, GET_ALL_TODO_SUCCESS } from "../../actions/todo";
 
 export function* getAllTodoSaga() {
   try {
-    let result = yield call(async () =>
+    let result: Promise<Response> = yield call(async () =>
       callAPI({
-        url: "https://jsonplaceholder.typicode.com/todos",
+        url: "https://jsonplaceholder.typicode.com/todos"
       })
     );
 
-    console.log("result", result);
-
     yield put(GET_ALL_TODO_SUCCESS(result));
   } catch (e) {
+    // eslint-disable-next-line
     debugger;
   }
 }

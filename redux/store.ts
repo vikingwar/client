@@ -7,31 +7,31 @@ import rootSaga from "./sagas";
 
 const sagaMiddleware = createSagaMiddleware();
 
-const reducer = createReducer({}, (builder) =>
+const reducer = createReducer({} as any, (builder) =>
   builder
-    .addCase(HYDRATE, (state, action) => {
+    .addCase(HYDRATE, (state, action: any) => {
       const nextState = {
         ...state,
-        ...action.payload,
+        ...action.payload
       };
       return nextState;
     })
-    .addDefaultCase((state, action) => {
+    .addDefaultCase((state, action: any) => {
       return rootReducer(state, action);
     })
 );
 
 const store = configureStore({
   reducer: reducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({ thunk: false }).concat(sagaMiddleware),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({ thunk: false }).concat(sagaMiddleware)
 });
 
 export const makeStore = () => {
-  store.sagaTask = sagaMiddleware.run(rootSaga);
+  (store as any).sagaTask = sagaMiddleware.run(rootSaga);
   return store;
 };
 
-export const wrapper = createWrapper(makeStore, {
-  debug: false,
+export type AppStore = ReturnType<typeof makeStore>;
+export const wrapper = createWrapper<AppStore>(makeStore, {
+  debug: false
 });

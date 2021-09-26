@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 function useDeviceType() {
   const [deviceType, setDeviceType] = useState("desktop");
-  const [deviceWidth, setDeviceWidth] = useState("desktop");
+  const [deviceWidth, setDeviceWidth] = useState(0);
 
   useEffect(() => {
     function updateSize() {
