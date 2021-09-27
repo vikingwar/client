@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import styled from "styled-components";
 
@@ -84,12 +85,19 @@ function Header() {
     <Wrapper>
       <Content>
         <Box>
-          <Logo>
-            <Image src="/images/logo.png" alt="Logo" width={43} height={43} />
-          </Logo>
+          <Link href="/">
+            <Logo>
+              <Image src="/images/logo.png" alt="Logo" width={43} height={43} />
+            </Logo>
+          </Link>
           <Menu>
-            <MenuItem>Game Info</MenuItem>
+            <Link href="/game">
+              <MenuItem>Game Info</MenuItem>
+            </Link>
             <MenuItem>Open NFT</MenuItem>
+            <Link href="/tokenomics">
+              <MenuItem>Tokenomics</MenuItem>
+            </Link>
             <MenuItem>News</MenuItem>
             <MenuItem>Faq</MenuItem>
           </Menu>
