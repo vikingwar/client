@@ -34,7 +34,7 @@ const Text = styled.div`
   background-color: rgba(24, 40, 55, 0.95);
   padding: 44px;
   color: #ccc;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
 
