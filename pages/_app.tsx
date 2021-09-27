@@ -1,9 +1,12 @@
-import "normalize.css";
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import { wrapper } from "../redux/store";
+import Providers from './Providers'
+import { ToastListener } from 'contexts/ToastsContext'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <Providers>
+      <ToastListener/>
+      <Component {...pageProps} />
+    </Providers>
+  )
 }
-export default wrapper.withRedux(MyApp);
+export default MyApp;
