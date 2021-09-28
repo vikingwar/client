@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from 'components/Button'
+import { useWeb3React } from '@web3-react/core'
+import ConnectWalletButton from 'components/ConnectWalletButton' 
+import { useWalletModal } from "widgets/WalletModal"
+import useAuth from 'hooks/useAuth'
 
 import styled from "styled-components";
 
@@ -81,6 +86,9 @@ const ButtonConnectWallet = styled.button`
 `;
 
 function Header() {
+  const { login, logout } = useAuth()
+  const { account } = useWeb3React()
+  const { onPresentAccountModal } = useWalletModal(login, logout, account)
   return (
     <Wrapper>
       <Content>
@@ -106,7 +114,19 @@ function Header() {
           </Menu>
         </Box>
         <Box>
-          <ButtonConnectWallet onClick={() => alert("Coming soon")}>Connect</ButtonConnectWallet>
+          {account ? (
+            <Button
+              variant="primary"
+              onClick={() => {
+                onPresentAccountModal()
+              }}
+              width="200px"
+            >
+              Join now
+            </Button>
+          ) : (
+            <ConnectWalletButton />
+          )}
         </Box>
       </Content>
     </Wrapper>
