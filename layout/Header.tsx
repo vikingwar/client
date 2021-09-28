@@ -98,6 +98,9 @@ function Header() {
             <Link href="/tokenomics">
               <MenuItem>Tokenomics</MenuItem>
             </Link>
+            <Link href="/whitepaper">
+              <MenuItem>Whitepaper</MenuItem>
+            </Link>
             <MenuItem>News</MenuItem>
             <MenuItem>Faq</MenuItem>
           </Menu>
