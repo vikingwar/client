@@ -7,10 +7,6 @@ export const getAddress = (address: Address): string => {
   return address[chainId] ? address[chainId] : address[56]
 }
 
-export const getTransactionAddress = () => {
-  return getAddress(addresses.transaction)
-}
-
 export const getCakeAddress = () => {
   return getAddress(tokens.cake.address)
 }
@@ -35,8 +31,4 @@ export const getPredictionsAddress = () => {
 }
 export const getChainlinkOracleAddress = () => {
   return getAddress(addresses.chainlinkOracle)
-}
-
-export const getPresaleAddress = () => {
-  return getAddress(addresses.presale)
 }
