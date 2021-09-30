@@ -38,6 +38,7 @@ const Menu = styled.div`
   }
 `;
 const MenuItem = styled.a`
+  color: white;
   margin-right: 50px;
   text-decoration: none;
   font-family: MuseoSans;

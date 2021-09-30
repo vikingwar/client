@@ -1,12 +1,15 @@
-import Providers from './Providers'
-import { ToastListener } from 'contexts/ToastsContext'
+import "normalize.css";
+import "../styles/globals.css";
+
+import Providers from "./Providers";
+import { ToastListener } from "contexts/ToastsContext";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Providers>
-      <ToastListener/>
+      <ToastListener />
       <Component {...pageProps} />
     </Providers>
-  )
+  );
 }
 export default MyApp;
