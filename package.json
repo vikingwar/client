@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.24",
-    "@types/styled-components": "^5.1.14",
+    "@types/styled-system": "^5.1.10",
     "babel-plugin-styled-components": "^1.13.2",
     "eslint": "^7.32.0",
     "eslint-config-next": "11.1.2",

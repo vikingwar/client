@@ -1,10 +1,10 @@
-import { neonColors, royalColors } from "theme/colors"
-import { AlertTheme } from "./types"
+import { darkColors, lightColors } from "../../theme/colors";
+import { AlertTheme } from "./types";
 
-export const royal: AlertTheme = {
-  background: royalColors.backgroundAlt,
+export const light: AlertTheme = {
+  background: lightColors.backgroundAlt,
 };
 
-export const neon: AlertTheme = {
-  background: neonColors.backgroundAlt,
+export const dark: AlertTheme = {
+  background: darkColors.backgroundAlt,
 };
