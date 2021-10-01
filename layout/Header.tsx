@@ -89,6 +89,9 @@ function Header() {
   const { login, logout } = useAuth();
   const { account } = useWeb3React();
   const { onPresentAccountModal } = useWalletModal(login, logout, account);
+  const accountEllipsis = account
+    ? `${account.substring(0, 4)}...${account.substring(account.length - 4)}`
+    : null;
   return (
     <Wrapper>
       <Content>
@@ -120,12 +123,17 @@ function Header() {
               onClick={() => {
                 onPresentAccountModal();
               }}
-              width="200px"
+              width="150px"
+              height="40px"
+              style={{ borderRadius: "30px" }}
             >
-              Join now
+              {accountEllipsis}
             </Button>
           ) : (
-            <ConnectWalletButton height="40px" />
+            <ConnectWalletButton
+              height="40px"
+              style={{ borderRadius: "30px" }}
+            />
           )}
         </Box>
       </Content>
